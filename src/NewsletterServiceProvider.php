@@ -9,6 +9,11 @@ class NewsletterServiceProvider extends ServiceProvider
 {
     protected $defer = false;
 
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
     public function boot()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-newsletter.php', 'laravel-newsletter');
